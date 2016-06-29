@@ -9,6 +9,7 @@
 #import "PinterestCollectionView.h"
 #import "PinterestLayout.h"
 #import "PinterestCollectionViewCell.h"
+#import "ZoomImage.h"
 
 static const NSInteger initLoadImageNum = 24; //第一次加载图片的数量
 static const NSInteger addRefreshImageNum = 12; //向下滑动加载图片数量
@@ -86,6 +87,14 @@ static NSString * const reuseIdentifier = @"PinterestCell";
     [cell setImageViewWithimageName:self.imagesArray[indexPath.row]];
     
     return cell;
+}
+
+#pragma mark <UICollectionViewDelegate>
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    PinterestCollectionViewCell *cell = (PinterestCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
+    UIImageView *cellImageView = cell.imageView;
+    [ZoomImage FullScreenShowImageView:cellImageView];
+    
 }
 
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{

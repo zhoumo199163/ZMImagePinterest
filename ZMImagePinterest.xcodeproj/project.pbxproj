@@ -23,6 +23,7 @@
 		98F742331CE2D71E00908C43 /* PinterestLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F7422C1CE2D71E00908C43 /* PinterestLayout.m */; settings = {ASSET_TAGS = (); }; };
 		98F742341CE2D71E00908C43 /* PinterestCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F7422F1CE2D71E00908C43 /* PinterestCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		98F742351CE2D71E00908C43 /* PinterestCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98F742301CE2D71E00908C43 /* PinterestCollectionViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		98F742421CE3015700908C43 /* ZoomImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F742411CE3015700908C43 /* ZoomImage.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,8 @@
 		98F7422F1CE2D71E00908C43 /* PinterestCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinterestCollectionViewCell.m; sourceTree = "<group>"; };
 		98F742301CE2D71E00908C43 /* PinterestCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PinterestCollectionViewCell.xib; sourceTree = "<group>"; };
 		98F742311CE2D71E00908C43 /* PinterestLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinterestLayout.h; sourceTree = "<group>"; };
+		98F742401CE3015700908C43 /* ZoomImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZoomImage.h; sourceTree = "<group>"; };
+		98F742411CE3015700908C43 /* ZoomImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZoomImage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,13 +123,15 @@
 		98F7421E1CE2D70600908C43 /* ZMImagePinterest */ = {
 			isa = PBXGroup;
 			children = (
-				98F7422B1CE2D71E00908C43 /* PinterestCollectionView.m */,
-				98F7422C1CE2D71E00908C43 /* PinterestLayout.m */,
 				98F7422D1CE2D71E00908C43 /* PinterestCollectionView.h */,
+				98F7422B1CE2D71E00908C43 /* PinterestCollectionView.m */,
 				98F7422E1CE2D71E00908C43 /* PinterestCollectionViewCell.h */,
 				98F7422F1CE2D71E00908C43 /* PinterestCollectionViewCell.m */,
 				98F742301CE2D71E00908C43 /* PinterestCollectionViewCell.xib */,
 				98F742311CE2D71E00908C43 /* PinterestLayout.h */,
+				98F7422C1CE2D71E00908C43 /* PinterestLayout.m */,
+				98F742401CE3015700908C43 /* ZoomImage.h */,
+				98F742411CE3015700908C43 /* ZoomImage.m */,
 			);
 			path = ZMImagePinterest;
 			sourceTree = "<group>";
@@ -209,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				98F742331CE2D71E00908C43 /* PinterestLayout.m in Sources */,
+				98F742421CE3015700908C43 /* ZoomImage.m in Sources */,
 				98F7420E1CE2D6BD00908C43 /* ViewController.m in Sources */,
 				98F742321CE2D71E00908C43 /* PinterestCollectionView.m in Sources */,
 				98F742341CE2D71E00908C43 /* PinterestCollectionViewCell.m in Sources */,
@@ -362,6 +368,7 @@
 				98F7421C1CE2D6BD00908C43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
